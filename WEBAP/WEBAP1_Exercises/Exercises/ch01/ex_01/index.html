@@ -8,6 +8,50 @@
     <script>
         $(document).ready(function()
         {
+          $("#b1").on("click", () => {
+            $("#page *").css("background", "");
+            $("p").css("background", "yellow");
+          });
+
+          $("#b2").on("click", () => {
+            $("#page *").css("background", "");
+            $("#left").css("background", "yellow");
+          });
+
+          $("#b3").on("click", () => {
+            $("#page *").css("background", "");
+            $("#left p").css("background", "yellow");
+          });
+
+          $("#b4").on("click", () => {
+            $("#page *").css("background", "");
+            $(".special").css("background", "yellow");
+          });
+
+          $("#b5").on("click", () => {
+            $("#page *").css("background", "");
+            $("p.special").css("background", "yellow");
+          });
+
+          $("#b6").on("click", () => {
+            $("#page *").css("background", "");
+            $("div#right p.special").css("background", "yellow");
+          });
+
+          $("#b7").on("click", () => {
+            $("#page *").css("background", "");
+            $("#page p").css("background", "yellow");
+          });
+
+          $("#b8").on("click", () => {
+            $("#page *").css("background", "");
+            $("#page > p").css("background", "yellow");
+          });
+
+          $("#reset").on("click", () => {
+            $("#page *").css("background", "");
+          });
+
             // TODO: bind a click event to every button (b1 … b8)
 
             // TODO: highlight the selected elements with css("background-color", "yellow")
